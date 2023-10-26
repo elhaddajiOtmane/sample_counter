@@ -1,0 +1,336 @@
+#wpcf7-f3253-p2551-o1 {
+    position: relative;
+    width: 607px;
+    height: 594px;
+    padding: 49px;
+    margin-left: -134px; /* Half of the width to center the form horizontally */
+    margin-top: -322px; /* Half of the height to center the form vertically */
+    background-color: white !important;
+      color:black;
+      border-radius: 13px;
+  }
+  #wpcf7-f3253-p2551-o1 span {
+    white-space: normal;
+  }
+  
+  
+  #wpcf7-f3253-p2551-o1 input[type="text"],
+  #wpcf7-f3253-p2551-o1 input[type="email"],
+  #wpcf7-f3253-p2551-o1 input[type="tel"] {
+  
+  }
+  
+  #wpcf7-f3253-p2551-o1 input[type="submit"] {
+    align-items: center; /* Corrected the property name */
+    text-align: center;
+    width: 15%;
+  }
+  
+  /* To adjust checkbox width */
+  #wpcf7-f3253-p2551-o1 input[type="checkbox"] {
+    width:px; /* This will let checkboxes use their default width */
+  }
+  
+  
+  /* Change text color to black on hover */
+  #wpcf7-f3253-p2551-o1 input[type="text"]:hover,
+  #wpcf7-f3253-p2551-o1 input[type="email"]:hover,
+  #wpcf7-f3253-p2551-o1 input[type="tel"]:hover {
+    color: black;
+  }
+  
+  /* Add this CSS code to style your submit button */
+  #wpcf7-f3253-p2551-o1 input[type="submit"] {
+    background-color: #38B6FF; /* Set the background color to blue */
+    color: white; /* Set the text color to white */
+    width: auto; /* Allow the button to expand to its content */
+    margin: 0 auto; /* Center the button horizontally */
+    display: block; /* Ensure the button is on its own line, centered */
+    border: none; /* Remove any border */
+    padding: 10px 20px; /* Adjust padding as needed */
+    border-radius: 5px; /* Add some border radius for rounded corners */
+  }
+  .qwerty {
+    font-size: 12px;
+    width: 12px;
+    height: 12px;
+    display: inline-block; /* To ensure proper alignment */
+  }
+  
+  /* Adjust the color and any other styles as needed */
+  .qwerty i {
+    color: #000; /* Change the color as needed */
+  }
+  #measure-unite{
+      display:none;
+  }
+  #measure-metre{
+      display:none;
+  }
+  #measure-group{
+      display:none;
+  }
+  /* random number displa non */
+  #random{
+      display:none;
+  }
+  
+  /* Replace elements with the class "wgl-testimonials_rating_count" with the specified image */
+  .wgl-testimonials_rating_count {
+    background: url("https://i.ibb.co/ZJ12JxX/Group-102.png") no-repeat;
+    background-size: px; /* Increase the size of the background image */
+    width: 70px; 
+    display: inline-block; /* To ensure proper alignment */
+    vertical-align: middle; /* To vertically align the image with text */
+    text-indent: -9999px; /* Hide the text content */
+    margin-top: 18px; /* Add a margin-top of 5px */
+  }
+  
+  /* Add any other styles you need for the replaced image */
+  
+  
+  #menu-menu-1 > li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children.menu-item-11607 > ul{
+      background-color:#fff;
+  }
+  #wpcf7-f8097-p2551-o2 > form > div.row.services > div > div:nth-child(4) > div:nth-child(7){
+      display:none !important;
+  }
+  #wpcf7-f8097-p2551-o2 > form > div.row.services > div > div:nth-child(4) > div:nth-child(6){
+      display:none !important;
+  }
+  #wpcf7-f8097-p2551-o2 > form > div.row.services > div > div:nth-child(4) > div:nth-child(5){
+      display:none !important;
+  }
+  .elementor-2551 .elementor-element.elementor-element-47da88d .wgl-testimonials_rating_count {
+      color: #ffffff;
+      background-color: #fff;
+  }
+  
+  .page-header:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+          background-color: rgba(0, 0, 0, 0);
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+  }
+  /*  style for posts and pages header colot  */
+  .page-header_breadcrumbs .breadcrumbs .current {
+    color: #000 !important;
+    cursor: default;
+    transition: 0.4s;
+  }
+  
+  
+  #wpcf7-f3253-p2551-o1::after {
+    content: ""; /* Clear the content property */
+    width: 115px;
+    height: 115px;
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    background: url('https://mytraitement.com/wp-content/uploads/2023/10/div.tablet-yellow.png') no-repeat;
+    background-size: cover; /* Adjust as needed to fit your design */
+    z-index: 99999;
+  }
+  
+  
+  body > header > div.wgl-site-header > div > div > section > div > div.elementor-column.elementor-col-33.elementor-top-column.elementor-element.elementor-element-0b83677 > div > div.elementor-element.elementor-element-6345577.elementor-widget__width-initial.elementor-widget.elementor-widget-wgl-header-cart > div > div > div > div.wgl-woo_mini_cart > div > p.woocommerce-mini-cart__total.total{
+      display:none;
+  }
+  
+  body > header > div.wgl-site-header > div > div > section > div > div.elementor-column.elementor-col-33.elementor-top-column.elementor-element.elementor-element-0b83677 > div > div.elementor-element.elementor-element-6345577.elementor-widget__width-initial.elementor-widget.elementor-widget-wgl-header-cart > div > div > div > div.wgl-woo_mini_cart > div > ul > li > div.wgl_mini-cart_contents > span > span{
+      display:none;
+  }
+  body > header > div.wgl-site-header > div > div > section > div > div.elementor-column.elementor-col-33.elementor-top-column.elementor-element.elementor-element-0b83677 > div > div.elementor-element.elementor-element-6345577.elementor-widget__width-initial.elementor-widget.elementor-widget-wgl-header-cart > div > div > div > div.wgl-woo_mini_cart > div > ul > li > div.wgl_mini-cart_contents > span{
+      display:none;
+  }
+  #main-content > div > div.woocommerce-form-coupon-toggle > div{
+      display:none;
+  }
+  #payment > div > label{
+      display:none;
+  }
+  
+  .elementor-widget-container .elementor-swiper-button.elementor-swiper-button-prev i:before {
+    content: "\f102";
+      transform:scaleX(-1);
+  }
+  
+  #pricTotalTtc{
+      display:none ;
+  }
+  #checkbox > span > label > span{
+      font-size:14px !important;
+  }
+  #wpcf7-f3253-p2551-o1 > form > input{
+      text-align:center;
+      margin:auto;
+      padding-left:38px !important;
+  }
+  .quantity-wrapper{
+      display:none !important;
+  }
+  /* tyles for number input */
+  input[type=number]{
+    display: block;
+    height: 50px;
+    max-width: 100%;
+    margin: 0 0 20px 0;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    padding: 10px 19px 10px;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 30px;
+    background-color: #f7f5f7;
+    color: #6e6e6e;
+    transition: background-color 0.3s, border-color 0.3s;
+    letter-spacing: 0.04em;
+  }
+  
+  /* Placeholder styles for number input */
+  input[type=number]::placeholder {
+    font-size: 16px;
+    font-weight: 500;
+    color: #6e6e6e;
+    outline: none;
+    letter-spacing: 0.04em;
+    -webkit-appearance: none;
+    transition: 0.4s;
+  }
+  
+  /* Placeholder styles for number input when focused or active */
+  input[type=number]:focus::placeholder, input[type=number]:active::placeholder {
+    opacity: 0;
+  }
+  
+  /* Styles for the number input when focused */
+  input[type=number]:focus {
+    background-color: #ffffff;
+    border-color: #ece8ec;
+  }
+  #main-content > div > div > section.woocommerce-order-details{
+      display:none;
+  }
+  #main-content > div > div > section.woocommerce-customer-details{
+      display:none;
+  }
+      #main-content > div > form > table > thead > tr > th.product-quantity{
+          display:none;
+      }
+      #main-content > div > form > table > thead > tr > th.product-remove{
+          display:none;
+      }
+  
+  #wpcf7-f3253-p2551-o1 > form > div.row.contact_form7_slider > div:nth-child(2) > p{
+      font-size:18px !important;
+  }
+  #wpcf7-f3253-p2551-o1 > form > div.row.contact_form7_slider > div:nth-child(8) > h6 > span > span.wpcf7-not-valid-tip{
+      font-size:18px !important;
+  }
+  #wpcf7-f3253-p2551-o1 > form > div.row.contact_form7_slider > div:nth-child(1) > h4{
+      font-size:28px !important;
+  }
+  .page-header_breadcrumbs .breadcrumbs > a:hover {
+      color: #3f3f3f !important;
+  }
+  
+  #wpcf7-f3253-p2551-o1 > form > div.row.contact_form7_slider > div:nth-child(8) > h6 > span > span.wpcf7-not-valid-tip{
+      font-size:13px !important;
+  }
+  
+  
+  /* added by seo 2023 10 20 */
+  /* hide additional info in product page */
+  .additional_information_tab {display:none !important}
+  
+  .footer .wpcf7 input[type=submit] {    background: #38b6ff;
+      color: white;
+      width: 4rem;}
+  .elementor-element .swiper .elementor-swiper-button {color: #38b6ff !important}
+  
+  .wgl-menu_outer .wgl-menu-outer_content {background-color: white;}
+  
+  @media (max-width: 600px) {
+  .header_search.search_mobile_menu .header_search-field .search-form {display:none}
+  } 
+  
+  /*  FIN SEO */
+  
+  /* hide subtotal  */
+  #product-12818 > div.summary.entry-summary > div.product_meta > span.sku_wrapper{
+      display:none;
+  }
+  /* nour */
+  /* #order_review > table > thead > tr > th.product-total{
+          display:none !important;
+      } */
+  
+  /* remove table forder in product form range */
+  #product-12818 > div.summary.entry-summary > form > table{
+      border-collapse: unset;
+  }
+  
+  #wpcf7-f3253-p2551-o1 > form > div.row.contact_form7_slider > div:nth-child(2) > div{
+  /* 	margin-top:-2px; */
+      font-size:13px;
+      color:green;
+  }
+  /* change font size for slider of catgries  */
+  .swiper-slide .e-overlay-animation-fade {
+      font-size:23px !important;
+  }
+  /* responsive form  */
+   @media (max-width: 1480px) {
+  /*  navbar font size  */
+  .item_text {
+    font-size:12px ;
+    position: relative;
+    z-index: 1;
+  }
+  }
+  
+  
+   @media (max-width: 1000px) {
+  /*  navbar font size  */
+  #wpcf7-f3253-p2551-o1 {
+      display:none;
+  }
+  }
+   @media (max-width: 1200px) {
+  /*  navbar font size  */
+  #wpcf7-f3253-p2551-o1 {
+      
+  }
+  }
+  /* Styles for screens less than 1300px wide (desktop) */
+  @media screen and (max-width: 1299px) {
+      #wpcf7-f3253-p2551-o1 > form > div.row.contact_form7_slider > div:nth-child(2) > p{
+          font-size:10px !important;
+      }
+      #wpcf7-f3253-p2551-o1 > form > div.row.contact_form7_slider > div:nth-child(1) > h4{
+          font-size:19px !important;
+      }
+    #wpcf7-f3253-p2551-o1 {
+      width: 100%; /* Adjust the width as needed */
+      height: auto; /* Adjust the height as needed */
+      padding: 3%; /* Adjust the padding as needed */
+    }
+    /* Adjust other styles as needed for smaller screens */
+    #wpcf7-f3253-p2551-o1 > form > div.row.contact_form7_slider > div:nth-child(2) > p {
+      font-size: 16px !important; /* Adjust the font size */
+    }
+  /* remove subtotal */
+  
+      
+  /* style thank u msg*/
+  p.woocommerce-notice.woocommerce-notice--success.woocommerce-thankyou-order-received {
+      font-size: 20px !important;
+      font-weight: 600;
+          margin: 0 0 40px 0;
+  }
+}

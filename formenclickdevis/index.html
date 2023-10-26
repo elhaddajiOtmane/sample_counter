@@ -1,0 +1,92 @@
+<style>
+    /* Add your CSS styling here */
+    .wgl_custom-row {
+        display: flex !important;
+        flex-wrap: wrap !important;
+    }
+
+    .wgl_custom-col {
+        flex: 1 !important;
+        margin-right: 10px !important;
+    }
+
+    /* Adjust the spacing as needed */
+
+    .wpcf7-select {
+        width: 100% !important;
+        padding: 10px !important;
+        border-radius: 5px !important;
+    }
+
+    .wpcf7-number {
+        width: 100% !important;
+        padding: 10px !important;
+        border: 1px solid #ccc !important;
+        border-radius: 5px;
+    }
+
+    .wpcf7-submit {
+        background-color: #007bff !important;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .wpcf7-submit:hover {
+        background-color: #0056b3;
+    }
+</style>
+<div class="wgl_col-12 wgl_custom-row">
+    <div class="wgl_custom-col">
+        <span class="wpcf7-form-control-wrap" data-name="produit">
+            <select class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required first-disable" aria-required="true" aria-invalid="false" name="produit">
+                <option value="" disabled="disabled">choisissez le traitement *</option>
+                <option value="Assèchement par injection exterieure">Assèchement par injection exterieure</option>
+                <option value="Hydrofuge façade/terrasse">Hydrofuge façade/terrasse</option>
+                <option value="Antimousse spéciale façade">Antimousse spéciale façade</option>
+                <option value="Anti-salpêtre par pulvérisation">Anti-salpêtre par pulvérisation</option>
+                <option value="Assèchement par injection interieure">Assèchement par injection interieure</option>
+                <option value="Purificateur / déshumidifcateur d'air">Purificateur / déshumidifcateur d'air</option>
+                <option value="IPE ( Inverseur de polarité éléctromagnétique)">IPE ( Inverseur de polarité éléctromagnétique)</option>
+                <option value="IPG ( Inverseur de polarité géomagnétique)">IPG ( Inverseur de polarité géomagnétique)</option>
+                <option value="Antimousse et traitement">Antimousse et traitement</option>
+                <option value="Hydrofuge toiture incoloré">Hydrofuge toiture incoloré</option>
+                <option value="Hydrofuge toiture coloré">Hydrofuge toiture coloré</option>
+                <option value="Action lente ( Concentré sans rinçage)">Action lente ( Concentré sans rinçage)</option>
+                <option value="Anti-mérule concentré par injéction / pulvérisation DALEP ( 1 bidon/60m²)">Anti-mérule concentré par injéction / pulvérisation DALEP ( 1 bidon/60m²)</option>
+                <option value="Curatif biosourcée">Curatif biosourcée</option>
+                <option value="Préventif">Préventif</option>
+                <option value="Ignifugeant bois / Charpente">Ignifugeant bois / Charpente</option>
+                <option value="VMI Purevent ( ventilairsec)">VMI Purevent ( ventilairsec)</option>
+                <option value="VMC EasyhomeHygroréglable">VMC EasyhomeHygroréglable</option>
+                <option value="Bande solin/trapo bavette plomb">Bande solin/trapo bavette plomb</option>
+                <option value="Peinture façade impression/finition">Peinture façade impression/finition</option>
+                <option value="Remise en conformité tableau électrique 1 rangée">Remise en conformité tableau électrique 1 rangée</option>
+                <option value="Remise en conformité tableau électrique 2 rangée">Remise en conformité tableau électrique 2 rangée</option>
+                <option value="Remise en conformité tableau électrique 3 rangée">Remise en conformité tableau électrique 3 rangée</option>
+                <option value="Remise en conformité tableau électrique 4 rangée">Remise en conformité tableau électrique 4 rangée</option>
+                <option value="Remise en conformité tableau électrique 5 rangée">Remise en conformité tableau électrique 5 rangée</option>
+            </select>
+        </span>
+    </div>
+    <div class="wgl_custom-col">
+        <div data-id="unite" data-orig_data_id="unite" data-class="wpcf7cf_group" style="height: auto; display: none;" class="wpcf7cf-hidden">
+            <span class="wpcf7-form-control-wrap" data-name="unite">
+                <input class="wpcf7-form-control wpcf7-number wpcf7-validates-as-number quintityinputt" min="0" max="10000" aria-invalid="false" placeholder="Unite *" value="" type="number" name="unite"></span>
+            </div>
+            <span data-id="metres-carres" data-orig_data_id="metres-carres" data-class="wpcf7cf_group" style="height: auto; display: none;" class="wpcf7cf-hidden">
+                <span class="wpcf7-form-control-wrap" data-name="metres-carres">
+                    <input class="wpcf7-form-control wpcf7-number wpcf7-validates-as-number quintityinputt" min="0" max="10000" aria-invalid="false" placeholder="M² *" value="" type="number" name="metres-carres"></span>
+                </span>
+                <div data-id="group-802" data-orig_data_id="group-802" data-class="wpcf7cf_group" style="height: auto; display: block;" class="">
+                    <span class="wpcf7-form-control-wrap" data-name="group-802">
+                        <input class="wpcf7-form-control wpcf7-number wpcf7-validates-as-number quintityinputt" min="0" max="10000" aria-invalid="false" placeholder="Ml *" value="" type="number" name="group-802"></span>
+                    </div>
+                </div>
+                <div class="wgl_custom-col submit ">
+                    <input class="wpcf7-form-control wpcf7-submit has-spinner" id="popup-calculator-form-build" type="submit" value="CALCULER">
+                        <span class="wpcf7-spinner"></span>
+                    </div>
+                    
+                    </div>

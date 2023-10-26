@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Soumission d'une nouvelle demande de simulation de coût de traitement "[produit]"</title>
+    <style>
+        /* Your CSS styles here */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>La simulation du traitement : <span id="produit">[produit]</span></h1>
+        <p><strong>Nom Complet:</strong> [nom]</p>
+        <p><strong>Email:</strong> [email-613]</p>
+        <p><strong>Produit:</strong> [produit]</p>
+        <p><strong>Quantité:</strong> <input type="text" id="unite" value="[unite]"> mètres carrés</p>
+        <p id="total-price"><strong>Prix total en TTC:</strong> €<span id="total-amount">0.00</span></p>
+    </div>
+    <div class="footer">
+        &copy; 2023 Mytraitement
+    </div>
+    <script>
+        function calculateTotalPrice() {
+            var product = document.getElementById("produit").innerText;
+            var quantity = parseFloat(document.getElementById("unite").value);
+            
+            var priceData = {
+                "Assèchement par injection exterieure": 119.90,
+                "Hydrofuge façade/terrasse": 35.09,
+                // ... (other product prices)
+            };
+
+            var totalPrice = priceData[product] * quantity;
+
+            var totalAmountElement = document.getElementById("total-amount");
+            totalAmountElement.innerText = totalPrice.toFixed(2);
+        }
+
+        document.getElementById("unite").addEventListener("input", calculateTotalPrice);
+        document.getElementById("produit").addEventListener("change", calculateTotalPrice);
+
+        calculateTotalPrice(); // Calculate the initial total price
+    </script>
+</body>
+</html>

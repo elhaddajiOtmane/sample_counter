@@ -1,0 +1,40 @@
+/* tyles for number input */
+input[type=number]{
+  display: block;
+  height: 50px;
+  max-width: 100%;
+  margin: 0 0 20px 0;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  padding: 10px 19px 10px;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 30px;
+  background-color: #f7f5f7;
+  color: #6e6e6e;
+  transition: background-color 0.3s, border-color 0.3s;
+  letter-spacing: 0.04em;
+}
+
+/* Placeholder styles for number input */
+input[type=number]::placeholder {
+  font-size: 16px;
+  font-weight: 500;
+  color: #6e6e6e;
+  outline: none;
+  letter-spacing: 0.04em;
+  -webkit-appearance: none;
+  transition: 0.4s;
+}
+
+/* Placeholder styles for number input when focused or active */
+input[type=number]:focus::placeholder, input[type=number]:active::placeholder {
+  opacity: 0;
+}
+
+/* Styles for the number input when focused */
+input[type=number]:focus {
+  background-color: #ffffff;
+  border-color: #ece8ec;
+}
