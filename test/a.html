@@ -1,0 +1,64 @@
+<div class='row services'>
+	<div class='wgl_col-12 wgl_custom-row'>
+	  <div class='wgl_custom-col-12'>
+		[text* nom class:popupnom placeholder akismet:author_email "Nom "]
+	  </div> 
+	  <div class='wgl_custom-col-12'>
+		[text* nom class:popupprenom placeholder akismet:author_email "Prénom "]
+	  </div> 
+  <div class='wgl_custom-col-12'>
+  [tel tel class:popuptel placeholder akismet:author_email "Tél "]
+  </div> 
+	  <div class='wgl_custom-col-12'>
+		[email popupemail class:popupemail placeholder akismet:author_email "E-Mail " ]
+  
+	  </div>
+   <div class='wgl_custom-col-12'>
+  [text popupservice id:popupService class:popupService]
+  </div>
+   <div class='wgl_custom-col-12'>
+  [text popupquantity id:popupQuantity class:popupQuantity]
+  </div>
+   <div class='wgl_custom-col-12'>
+  [text popupprixtotal id:popupPricTotalTtc class:popupPricTotalTtc]
+  </div>
+	  </div>
+	  <div class='wgl_custom-col-12 submit'>
+		[submit "Envoyer"]
+	  </div>
+	</div>
+  </div>
+
+
+  <!DOCTYPE html>
+  <html>
+  <head>
+  <style>
+	#priceTtc {
+	  position: relative;
+	  color: #fff;
+	  font-family: Poppins;
+	  font-size: 10px;
+	  font-style: normal;
+	  font-weight: 400;
+	  line-height: normal;
+	}
+  
+	#priceTtc::before {
+	  content: "a partire de ";
+	  display: block;
+	  position: absolute;
+	  top: -20px; /* Adjust the positioning as needed */
+	}
+  </style>
+  </head>
+  <body>
+	<span id="priceTtc">1245 $</span>
+  </body>
+  </html>
+  
+
+  // ...
+// Calculate the price including 20% TVA
+const price = (productPrices[selectedProduct] / (1 + tvaRate)) * quantity;
+totalInput.innerHTML = price.toFixed(0) + "€ <span style=\"font-size: 16px;\">TTC</span>"; 

@@ -25,20 +25,18 @@ document.addEventListener("DOMContentLoaded", function () {
         // prix total
         
     const productPrices = {
-     "Assèchement par injection murs pierre": "109,00 €",
-      "Hydrofuge façade (nettoyage + hydrofuge)": "31,90 €",
-      "Anti mousse façade (nettoyage seul)": "19,90 €",
-      "Anti salpêtre par pulvérisation": "39,90 €",
-      "Assèchement par injection murs parpaing": "109,00 €",
-      "Anti mousse toiture (nettoyage seul)": "19,90 €",
-      "Hydrofuge toiture incolore (nettoyage + hydrofuge)": "31,90 €",
-      "Hydrofuge toiture coloré (nettoyage + hydrofuge)": "39,90 €",
-      "Traitement des bois curatif (injection)": "19,90 €",
-      "Traitement des bois préventif (pulvérisation)": "9,99 €",
-      "Ignifugeant charpente (retardataire d’incendies par pulvérisation)": "29,90 €"
-    };
-    
-    
+     "Assèchement par injection murs pierre": "109",
+      "Hydrofuge façade (nettoyage + hydrofuge)": "31.90",
+      "Anti mousse façade (nettoyage seul)": "19.90",
+      "Anti salpêtre par pulvérisation": "39.90",
+      "Assèchement par injection murs parpaing": "109",
+      "Anti mousse toiture (nettoyage seul)": "19.90",
+      "Hydrofuge toiture incolore (nettoyage + hydrofuge)": "31.90",
+      "Hydrofuge toiture coloré (nettoyage + hydrofuge)": "39.90",
+      "Traitement des bois curatif (injection)": "19.90",
+      "Traitement des bois préventif (pulvérisation)": "9.99",
+      "Ignifugeant charpente (retardataire d incendies par pulvérisation)": "29.90"
+    };    
         // Get the necessary elements
         const selectElement = document.querySelector('select[name="produit"].wpcf7-select');
        

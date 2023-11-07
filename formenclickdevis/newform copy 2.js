@@ -49,7 +49,20 @@ if (quantityInput) {
             quantityInput.value = value;
         }
     });
+
+    // Add an event listener to the select element when its value changes
+    selectElement.addEventListener("change", function () {
+        const selectedProduct = selectElement.options[selectElement.selectedIndex].text;
+        let placeholder = "Qté M2"; // Default placeholder
+        if (selectedProduct === "Assèchement par injection murs parpaing" || selectedProduct === "Assèchement par injection murs pierre") {
+            placeholder = "Qté ML"; // Change the placeholder based on the selected product
+        }
+        quantityInput.placeholder = placeholder;
+    });
 }
+
+
+
     // Add an event listener to the select element when its value changes
     submitInput.addEventListener("click", function () { 
 		
@@ -86,16 +99,10 @@ if (quantityInput) {
     }
     );
 // Add an event listener to elementToDisplay
-popupEmail.addEventListener("change", function () {
-    // Update the values of popupSelectElement, popupQuantityInput, and popupTotalInput
-    console.log("selectElement.value: " + selectElement.value);
-    console.log("quantityInput.value: " + quantityInput.value);
-    console.log("totalInput.textContent: " + totalInput.textContent);
-    popupSelectElement.value = selectElement.value;
-    popupQuantityInput.value = quantityInput.value;
-	popupSelectElement.textContent = selectElement.value;
-    popupQuantityInput.textContent = quantityInput.value;
-    popupTotalInput.textContent = totalInput.textContent;
-});
+    elementToDisplay.addEventListener("click", function () {
+        popupSelectElement.value = selectElement.value;
+        popupQuantityInput.value = quantityInput.value;
+        popupTotalInput.textContent = totalInput.textContent;
+    });
 
 });
