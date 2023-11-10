@@ -17,21 +17,27 @@ document.addEventListener("DOMContentLoaded", function () {
        };
        
     // Get the necessary elements using your updated selectors
-    const selectElement = document.querySelector('#wpcf7-f13516-p2551-o2 > form > div.row.services > div > div:nth-child(1) > span > select');
-    const quantityInput = document.querySelector("#wpcf7-f13516-p2551-o2 > form > div.row.services > div > div:nth-child(2) > span > input");
+    const selectElement = document.querySelector("#product-list");
+    const quantityInput = document.getElementById('quintity');
+    const popupForm = document.querySelector('#wpcf7-f13560-p2551-o4');
+
     const totalInput = document.querySelector("#priceTtc");
-	
     const submitInput = document.getElementById('submit');
 // 	element to display
 	const elementToDisplay = document.querySelector("#clickIci > div > p");
 	
 // 	popup
-// 	#popupService
-	const popupSelectElement=document.querySelector("#wpcf7-f13560-p2551-o4 > form > div.row.services > div.wgl_col-12.wgl_custom-row > div:nth-child(5) > span > input");
-	const popupQuantityInput=document.querySelector("#wpcf7-f13560-p2551-o4 > form > div.row.services > div.wgl_col-12.wgl_custom-row > div:nth-child(6) > span > input");
+
+// Get references to the elements in the popup form
+
+
+
+
+const popupSelectElement = popupForm.querySelector('[data-name="service"]');
+const popupQuantityInput = popupForm.querySelector('[data-name="qte"]');
+
 	const popupTotalInput=document.querySelector("#wpcf7-f13560-p2551-o4 > form > div.row.services > div.wgl_col-12.wgl_custom-row > div:nth-child(7) > span > input");
-	const popupEmail=document.querySelector("#wpcf7-f13560-p2551-o4 > form > div.row.services > div.wgl_col-12.wgl_custom-row > div:nth-child(4) > span > input");
-	console.log('popupEmail',popupEmail)
+	const popupEmail = popupForm.querySelector('[data-name="popupemail"]');
 	
 // 	filter to enshour that the input correct
 if (quantityInput) {
@@ -64,45 +70,38 @@ if (quantityInput) {
 
 
     // Add an event listener to the select element when its value changes
-    submitInput.addEventListener("click", function () { 
-		
-      const selectedProduct = selectElement.options[selectElement.selectedIndex].text;
+    submitInput.addEventListener("click", function () {
+        const selectedProduct = selectElement.options[selectElement.selectedIndex].text;
+        const quantity = quantityInput.value;
       
-      const quantity = quantityInput.value;
-     
-      if (productPrices.hasOwnProperty(selectedProduct)) {
+        if (productPrices.hasOwnProperty(selectedProduct)) {
           const tvaRate = 0.20; // 20% tax rate
- 			 // Calculate the price including 20% TVA
-  		const price = (productPrices[selectedProduct] / (1 + tvaRate)) * quantity;
-      //  totalInput.textContent  = price.toFixed(0) + "€ ";
-		  totalInput.innerHTML = price.toFixed(0) + "€* <span style=\"font-size: 16px;color:#fff;\">TTC</span>"; 
-		 // event lisner to show text 
-		 //  Get the submit button element
-		totalInput.style.display = "block";
-        submitInput.addEventListener("click", function() {
-        // Apply a fade-in animation
-        elementToDisplay.style.opacity = "1 !important"; // Initially set opacity to 0 (completely transparent)
-        elementToDisplay.style.display = "block "; // Display the element
-
-        // Use a CSS transition to create a fade-in effect
-        elementToDisplay.style.transition = "opacity 0.5s"; // Adjust the duration as needed
-        setTimeout(function() {
-            elementToDisplay.style.opacity = "1"; // Set opacity to 1 (fully visible)
-        }, 0); // Use a slight delay to trigger the animation
-        });
-
-		 
-      } else {
-        totalInput.value = "Product not found";
+          const prixnotttc = productPrices[selectedProduct] * quantity;
+          const price = prixnotttc + tvaRate * prixnotttc;
+          totalInput.innerHTML = price.toFixed(0) + "€* <span style=\"font-size: 16px;color:#fff;\">TTC</span>";
+          totalInput.style.display = "block";
       
+          // Apply a fade-in animation to both elements
+          elementToDisplay.style.opacity = "0"; // Initially set opacity to 0 (completely transparent)
+          elementToDisplay.style.display = "block"; // Display the element
+          totalInput.style.opacity = "0"; // Initially set opacity to 0 (completely transparent)
+      
+          // Use a CSS transition to create a fade-in effect
+          elementToDisplay.style.transition = "opacity 0.5s"; // Adjust the duration as needed
+          totalInput.style.transition = "opacity 0.5s"; // Adjust the duration as needed
+      
+          setTimeout(function () {
+            elementToDisplay.style.opacity = "1"; // Set opacity to 1 (fully visible)
+            totalInput.style.opacity = "1"; // Set opacity to 1 (fully visible)
+          }, 0); // Use a slight delay to trigger the animation
+        } else {
+          totalInput.value = "Product not found";
         }
-    }
-    );
+   
+      });
+      
 // Add an event listener to elementToDisplay
-    elementToDisplay.addEventListener("click", function () {
-        popupSelectElement.value = selectElement.value;
-        popupQuantityInput.value = quantityInput.value;
-        popupTotalInput.textContent = totalInput.textContent;
-    });
+
+
 
 });

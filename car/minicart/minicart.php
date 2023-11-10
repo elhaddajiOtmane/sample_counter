@@ -52,11 +52,11 @@ do_action( 'woocommerce_before_mini_cart' ); ?>
 
                 if ( empty( $product_permalink ) ) : ?>
                     <div class="wgl_mini-cart_image"><?php echo Cleenday_Theme_Helper::render_html($thumbnail); ?></div>
-                    <div class="wgl_mini-cart_contents"><?php esc_html($product_name);
-                else : ?>
+                    <div class="wgl_mini-cart_contents"><?php echo esc_html($product_name); ?></div>
+                <?php else : ?>
                     <div class="wgl_mini-cart_image"><a href="<?php echo esc_url( $product_permalink ); ?>"><?php echo Cleenday_Theme_Helper::render_html($thumbnail); ?></a></div>
                     <div class="wgl_mini-cart_contents">
-                        <a href="<?php echo esc_url( $product_permalink ); ?>"><?php esc_html($product_name); ?></a><?php
+                        <a href="<?php echo esc_url( $product_permalink ); ?>"><?php echo esc_html($product_name); ?></a><?php
                 endif;
                         echo wc_get_formatted_cart_item_data( $cart_item ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
                         echo apply_filters( 'woocommerce_widget_cart_item_quantity', '<span class="quantity">' . sprintf( '%s &times; %s', $cart_item['quantity'], $product_price ) . '</span>', $cart_item, $cart_item_key ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
@@ -85,9 +85,8 @@ do_action( 'woocommerce_before_mini_cart' ); ?>
 
 else : ?>
 
-	<p class="woocommerce-mini-cart__empty-message"><?php esc_html_e( 'No products in the cart.', 'cleenday' ); ?></p><?php
+	<p class "woocommerce-mini-cart__empty-message"><?php esc_html_e( 'No products in the cart.', 'cleenday' ); ?></p><?php
 
 endif;
 
 do_action( 'woocommerce_after_mini_cart' );
-"
