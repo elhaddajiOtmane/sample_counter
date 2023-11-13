@@ -33,8 +33,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-    const popupSelectElement = document.querySelector("#stuff1");
-    const popupQuantityInput = document.querySelector("#stuff2");
+    const popupSelectElement = popupForm.querySelector('[data-name="service"]');
+    const popupQuantityInput = popupForm.querySelector('[data-name="qte"]');
 
     const popupTotalInput=document.querySelector("div.wgl_custom-col:nth-child(1) > span:nth-child(1) > select:nth-child(1)");
     const popupEmail = popupForm.querySelector('[data-name="popupemail"]');
@@ -73,9 +73,7 @@ document.addEventListener("DOMContentLoaded", function () {
     submitInput.addEventListener("click", function () {
         const selectedProduct = selectElement.options[selectElement.selectedIndex].text;
         const quantity = quantityInput.value;
-        // Save each value with a distinct key
-        localStorage.setItem("selectedProduct", selectedProduct);
-        localStorage.setItem("quantity", quantity);
+
         if (productPrices.hasOwnProperty(selectedProduct)) {
             const tvaRate = 0.10; // 10% tax rate
             const prixnotttc = productPrices[selectedProduct] * quantity;
@@ -104,13 +102,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Add an event listener to elementToDisplay
 
-elementToDisplay.addEventListener("click", function () {
-    popupSelectElement.value = localStorage.getItem('selectedProduct');
-    popupQuantityInput.value = localStorage.getItem('quantity');
-
-});
 
 
 });
-
-
